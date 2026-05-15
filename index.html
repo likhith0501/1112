@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NexusCare | Premium Hospital Management</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Phosphor Icons -->
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+  <div id="app">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="brand">
+        <i class="ph-fill ph-heartbeat icon-brand"></i>
+        <span>NexusCare</span>
+      </div>
+      <nav class="nav-menu">
+        <a href="#" class="nav-link active" data-page="dashboard"><i class="ph ph-squares-four"></i> Dashboard</a>
+        <a href="#" class="nav-link" data-page="patients"><i class="ph ph-users"></i> Patients</a>
+        <a href="#" class="nav-link" data-page="doctors"><i class="ph ph-stethoscope"></i> Doctors</a>
+        <a href="#" class="nav-link" data-page="appointments"><i class="ph ph-calendar-check"></i> Appointments</a>
+        <a href="#" class="nav-link" data-page="bills"><i class="ph ph-receipt"></i> Billing</a>
+      </nav>
+      <div class="user-profile">
+        <img src="https://ui-avatars.com/api/?name=Admin&background=3b82f6&color=fff" alt="Admin">
+        <div class="user-info">
+          <p class="user-name">Admin User</p>
+          <p class="user-role">Administrator</p>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <header class="top-header">
+        <h1 id="page-title">Dashboard</h1>
+        <div class="header-actions">
+          <button class="icon-btn"><i class="ph ph-bell"></i></button>
+          <button class="icon-btn"><i class="ph ph-gear"></i></button>
+        </div>
+      </header>
+      
+      <div id="content-area" class="content-area">
+        <!-- Dynamic Content Injected Here -->
+      </div>
+    </main>
+  </div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
